@@ -1,0 +1,16 @@
+Script started on 2023-11-15 13:01:40+02:00 [TERM="xterm-256color" TTY="/dev/pts/15" COLUMNS="179" LINES="14"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;nuuttinyyssonen@DESKTOP-OK0F61E: /mnt/c/Users/nuutt/FullStackOpenOsa12[01;32mnuuttinyyssonen@DESKTOP-OK0F61E[00m:[01;34m/mnt/c/Users/nuutt/FullStackOpenOsa12[00m$ echo "hello"
+[?2004lhello
+[?2004h]0;nuuttinyyssonen@DESKTOP-OK0F61E: /mnt/c/Users/nuutt/FullStackOpenOsa12[01;32mnuuttinyyssonen@DESKTOP-OK0F61E[00m:[01;34m/mnt/c/Users/nuutt/FullStackOpenOsa12[00m$ co[K[Kdocker run[K[K[Krun -it ubuntu bash
+[?2004l[?2004h]0;root@46f035726a40: /root@46f035726a40:/# mk dir     kdir/ //src/[1P/[1P/[1P/u/y/s/r//[1Psr/src/ap
+[?2004l[?2004h]0;root@46f035726a40: /root@46f035726a40:/# mdk  kdir /usr/src/app
+[?2004l[?2004h]0;root@46f035726a40: /root@46f035726a40:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@46f035726a40: /root@46f035726a40:/# [Kexit
+[?2004lexit
+[?2004h]0;nuuttinyyssonen@DESKTOP-OK0F61E: /mnt/c/Users/nuutt/FullStackOpenOsa12[01;32mnuuttinyyssonen@DESKTOP-OK0F61E[00m:[01;34m/mnt/c/Users/nuutt/FullStackOpenOsa12[00m$ [?2004l
+exit
+
+Script done on 2023-11-15 13:03:12+02:00 [COMMAND_EXIT_CODE="0"]
