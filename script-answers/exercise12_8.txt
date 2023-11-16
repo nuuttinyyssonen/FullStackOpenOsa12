@@ -1,0 +1,103 @@
+Script started on 2023-11-16 11:17:57+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="179" LINES="16"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;nuuttinyyssonen@DESKTOP-OK0F61E: /mnt/c/Users/nuutt/FullStackOpenOsa12/todo-app/todo-backend[01;32mnuuttinyyssonen@DESKTOP-OK0F61E[00m:[01;34m/mnt/c/Users/nuutt/FullStackOpenOsa12/todo-app/todo-backend[00m$ docker exe-[Kc -it todo-mongo-bacn[Kkend-1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbackend-mongo bash
+[?2004lError response from daemon: No such container: todo-backend-mongo
+[?2004h]0;nuuttinyyssonen@DESKTOP-OK0F61E: /mnt/c/Users/nuutt/FullStackOpenOsa12/todo-app/todo-backend[01;32mnuuttinyyssonen@DESKTOP-OK0F61E[00m:[01;34m/mnt/c/Users/nuutt/FullStackOpenOsa12/todo-app/todo-backend[00m$ docker exec -it todo-backend-mongo bash[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker compose -f docker-compose.dev.yml up -dntainer ls[Kmpose -f docker-compose.dev.yml up -dntainer ls[KREDIS_URL=redis://some-redis:6379 MONGO_URL=mongodb://the_username:the_password@localhost:3456/the_database npm run dev[A]0;nuuttinyyssonen@DESKTOP-OK0F61E: /mnt/c/Users/nuutt/FullStackOpenOsa12/todo-app/todo-backend[01;32mnuuttinyyssonen@DESKTOP-OK0F61E[00m:[01;34m/mnt/c/Users/nuutt/FullStackOpenOsa12/todo-app/todo-backend[00m$ docker container ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmpose -f docker-compose.dev.yml up -d[Kdocker compose -f docker-compose.dev.yml up -d[Kdocker exec -it todo-backebd[K[Knd-mongo-1 bash
+[?2004l[?2004hroot@0c17d9602bee:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6555de95624fe4524a77ea1c
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2[0m
+Using MongoDB:		7.0.3
+[1m[33mUsing Mongosh[0m:		2.0.2
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1G[0Jtest> [7Gshow dbs
+Uncaught [1m[31mMongoServerError[0m: Command listDatabases requires authentication
+[1G[0Jtest> [7G- [1G[0Jtest> -[8Gu root[1G[0Jtest> -u roo[13G[1G[0Jtest> -u ro[12G[1G[0Jtest> -u r[11G[1G[0Jtest> -u [10G[1G[0Jtest> -u[9G[1G[0Jtest> -[8G[1G[0Jtest> [7G-u root -p example
+Uncaught:
+[1m[31mSyntaxError[0m: Missing semicolon. (1:2)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m [33m-[39mu root [33m-[39mp example[0m
+[0m [90m   |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 2 |[39m[0m
+
+[1G[0Jtest> [7G-u root -p example[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jtest> -u root, -p example[15G[11C
+Uncaught:
+[1m[31mSyntaxError[0m: Missing semicolon. (1:2)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m [33m-[39mu root[33m,[39m [33m-[39mp example[0m
+[0m [90m   |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 2 |[39m[0m
+
+[1G[0Jtest> [7G[1G[0Jtest> -u root, -p example[26G[1G[0Jtest> -u root, -p exampl[25G[1G[0Jtest> -u root, -p examp[24G[1G[0Jtest> -u root, -p exam[23G[1G[0Jtest> -u root, -p exa[22G[1G[0Jtest> -u root, -p ex[21G[1G[0Jtest> -u root, -p e[20G[1G[0Jtest> -u root, -p [19G[1G[0Jtest> -u root, -p[18G[1G[0Jtest> -u root, -[17G[1G[0Jtest> -u root, [16G[1G[0Jtest> -u root,[15G[1G[0Jtest> -u root[14G
+Uncaught:
+[1m[31mSyntaxError[0m: Missing semicolon. (1:2)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m [33m-[39mu root[0m
+[0m [90m   |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 2 |[39m[0m
+
+[1G[0Jtest> [7Gmongo -u your_username -p your_password
+Uncaught:
+[1m[31mSyntaxError[0m: Missing semicolon. (1:8)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m mongo [33m-[39mu your_username [33m-[39mp your_password[0m
+[0m [90m   |[39m         [31m[1m^[22m[39m[0m
+[0m [90m 2 |[39m[0m
+
+[1G[0Jtest> [7Gexit
+[?2004hroot@0c17d9602bee:/# mongosh -u rot    ot  ot ot -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6555df3b73e53d0fad34b66c
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2[0m
+Using MongoDB:		7.0.3
+[1m[33mUsing Mongosh[0m:		2.0.2
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2023-11-16T09:16:30.378+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2023-11-16T09:16:36.695+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+   2023-11-16T09:16:36.696+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7G[1G[0Jtest> [7G[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow s[1G[0Jthe_database> show [20Gcollections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.insertOne()[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m)[34G[1G[0Jthe_database> db.todos.insertOne[44m([49m[)[35G[1G[0Jthe_database> db.todos.insertOne[44m([49m)[34G[1G[0Jthe_database> db.todos.insertOne[44m([49m{)[35G[1G[0Jthe_database> db.todos.insertOne[44m([49m{})[36G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m})[35G[1G[0Jthe_database> db.todos.insertOne([44m{[49m })[36G[1G[0Jthe_database> db.todos.insertOne([44m{[49m  })[37G[1D[1G[0Jthe_database> db.todos.insertOne({  })[36G[1G[0Jthe_database> db.todos.insertOne({ t })[37G[1G[0Jthe_database> db.todos.insertOne({ te })[38G[1G[0Jthe_database> db.todos.insertOne({ tes })[39G[1G[0Jthe_database> db.todos.insertOne({ test })[40G[1G[0Jthe_database> db.todos.insertOne({ tes })[39G[1G[0Jthe_database> db.todos.insertOne({ tesx })[40G[1G[0Jthe_database> db.todos.insertOne({ tesxt })[41G[1D[1D[1G[0Jthe_database> db.todos.insertOne({ text })[38G[1C[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: })[41G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m:  })[42G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m" })[39m[43G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m""[39m })[44G[1D[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49m"[39m })[43G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mW"[39m })[44G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWr"[39m })[45G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWri"[39m })[46G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrit"[39m })[47G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite"[39m })[48G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite "[39m })[49G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite T"[39m })[50G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite Te"[39m })[51G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite Tes"[39m })[52G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite Test"[39m })[53G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite Test "[39m })[54G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite Test C"[39m })[55G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite Test Co"[39m })[56G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite Test Cod"[39m })[57G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mWrite Test Code"[39m })[58G[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m })[59G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, })[60G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m,  })[61G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, d })[62G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [36mdo[39m })[63G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, don })[64G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, done })[65G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: })[66G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m:  })[67G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: t })[68G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: tr })[69G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: tre }) [70G[1A[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: treu })[71G[1A[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: tre }) [70G[1A[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: tr })[69G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: tru }) [70G[1A[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: [33mtrue[39m })[71G[1A[1C[1G[0Jthe_database> db.todos.insertOne([44m{[49m [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: [33mtrue[39m })[72G[1A[1G[0Jthe_database> db.todos.insertOne[44m([49m{ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: [33mtrue[39m })[1G[1A[1G[0Jthe_database> db.todos.insertOne[44m([49m{ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: [33mtrue[39m })[1G[1C[1A[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Write Test Code"[39m, [33mdone[39m: [33mtrue[39m })[2G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("6555df8373e53d0fad34b66d")
+}
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.find[1G[0Jthe_database> db.fin[21G[1G[0Jthe_database> db.fi[20G[1G[0Jthe_database> db.f[19G[1G[0Jthe_database> db.[18Gtofo[1G[0Jthe_database> db.tof[21G[1G[0Jthe_database> db.to[20Gdos.find()[1D[1G[0Jthe_database> db.todos.find[44m([49m)[29G[1G[0Jthe_database> db.todos.find[44m([49m[)[30G[1G[0Jthe_database> db.todos.find[44m([49m[])[31G[1G[0Jthe_database> db.todos.find[44m([49m[)[30G[1G[0Jthe_database> db.todos.find[44m([49m)[29G[1G[0Jthe_database> db.todos.find[44m([49m{)[30G[1G[0Jthe_database> db.todos.find[44m([49m{})[31G[1C[1G[0Jthe_database> db.todos.find({})[32G
+[
+  { _id: ObjectId("6554c2a64ddbc6037545c3b5") },
+  {
+    _id: ObjectId("6554c2a64ddbc6037545c3b6"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("6555df8373e53d0fad34b66d"),
+    text: [32m'Write Test Code'[39m,
+    done: [33mtrue[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+e [?2004hroot@0c17d9602bee:/# exit
+[?2004lexit
+[?2004h]0;nuuttinyyssonen@DESKTOP-OK0F61E: /mnt/c/Users/nuutt/FullStackOpenOsa12/todo-app/todo-backend[01;32mnuuttinyyssonen@DESKTOP-OK0F61E[00m:[01;34m/mnt/c/Users/nuutt/FullStackOpenOsa12/todo-app/todo-backend[00m$ exit
+[?2004lexit
+
+Script done on 2023-11-16 11:23:42+02:00 [COMMAND_EXIT_CODE="0"]
